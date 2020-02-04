@@ -11,18 +11,7 @@ from datetime import datetime
 docpath = "docs/content"
 outfile = "MANUAL.md"
 
-# Order to add docs segments to make outfile
-docs = [
-    "about.md",
-    "install.md",
-    "docs.md",
-    "remote_setup.md",
-    "filtering.md",
-    "gui.md",
-    "rc.md",
-    "overview.md",
-    "flags.md",
-
+provider_docs = [
     # Keep these alphabetical by full name
     "fichier.md",
     "alias.md",
@@ -59,7 +48,20 @@ docs = [
     "union.md",
     "webdav.md",
     "yandex.md",
+]
 
+# Order to add docs segments to make outfile
+docs = [
+    "about.md",
+    "install.md",
+    "docs.md",
+    "remote_setup.md",
+    "filtering.md",
+    "gui.md",
+    "rc.md",
+    "overview.md",
+    "flags.md",
+    ] + provider_docs + [
     "local.md",
     "changelog.md",
     "bugs.md",
@@ -160,6 +162,9 @@ def main():
             # Substitute the commands into doc.md
             if doc == "docs.md":
                 contents = re.sub(r"The main rclone commands.*?for the full list.", command_docs, contents, 0, re.S)
+            # add "anchor" tag at the beginning of each provider doc, so they can be linked to internally in the final document
+            if doc in provider_docs:
+                contents = "<a name=\"" + doc + "\"></a>\n\n" + contents 
             out.write(contents)
     print("Written '%s'" % outfile)
 
