@@ -10,11 +10,11 @@ groups: ["about"]
 
 Rclone is a command line program to sync files and directories to and from:
 
-* {{< provider name="1Fichier" home="https://1fichier.com/" config="/fichier/" >}}
-* {{< provider name="Alibaba Cloud (Aliyun) Object Storage System (OSS)" home="https://www.alibabacloud.com/product/oss/" config="/s3/#alibaba-oss" >}}
-* {{< provider name="Amazon Drive" home="https://www.amazon.com/clouddrive" config="/amazonclouddrive/" >}} ([See note](/amazonclouddrive/#status))
-* {{< provider name="Amazon S3" home="https://aws.amazon.com/s3/" config="/s3/" >}}
-* {{< provider name="Backblaze B2" home="https://www.backblaze.com/b2/cloud-storage.html" config="/b2/" >}}
+* [{{< provider name="1Fichier" home="https://1fichier.com/" config="/fichier/" >}}](#fichier.md)
+* [{{< provider name="Alibaba Cloud (Aliyun) Object Storage System (OSS)" home="https://www.alibabacloud.com/product/oss/" config="/s3/#alibaba-oss" >}}](#alibaba-oss)
+* [{{< provider name="Amazon Drive" home="https://www.amazon.com/clouddrive" config="/amazonclouddrive/" >}}](#amazonclouddrive.md) ([See note](#status))
+* [{{< provider name="Amazon S3" home="https://aws.amazon.com/s3/" config="/s3/" >}}](#s3.md)
+* [{{< provider name="Backblaze B2" home="https://www.backblaze.com/b2/cloud-storage.html" config="/b2/" >}}](#b2.md)
 * {{< provider name="Box" home="https://www.box.com/" config="/box/" >}}
 * {{< provider name="Ceph" home="http://ceph.com/" config="/s3/#ceph" >}}
 * {{< provider name="Citrix ShareFile" home="http://sharefile.com/" config="/sharefile/" >}}
