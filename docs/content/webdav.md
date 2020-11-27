@@ -197,11 +197,8 @@ Owncloud supports modified times using the `X-OC-Mtime` header.
 
 ### Nextcloud ###
 
-This is configured in an identical way to Owncloud.  Note that
-Nextcloud does not support streaming of files (`rcat`) whereas
-Owncloud does. This [may be
-fixed](https://github.com/nextcloud/nextcloud-snap/issues/365) in the
-future.
+This is configured in an identical way to Owncloud.  Nextcloud didn't support streaming of files (`rcat`) whereas
+Owncloud does, but as of 2020-11-27 [this](https://github.com/nextcloud/nextcloud-snap/issues/365) seems to be fixed (tested with rclone 1.53.1 and NextCloud Server v19). 
 
 ### Sharepoint ###
 
